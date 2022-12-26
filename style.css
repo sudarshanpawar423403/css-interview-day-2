@@ -1,0 +1,39 @@
+.box{
+    width: 100px;
+    height: 100px;
+    
+    
+    background-color: red;
+    border: 2px solid black;
+    position: relative;
+    animation-name: box;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+@keyframes box {
+    0%{
+        transform:translate(0px,0px);
+        background-color: rgba(15, 175, 0, 0.63);
+    }
+    25%{
+        transform: translate(500px,0px);
+        background-color: rgb(255, 51, 0);
+    }
+    50%{
+        transform: translate(500px,500px);
+        background-color: rgba(136, 122, 122, 0.041);
+    }
+
+    75%{
+        transform: translate(0px,500px);
+        background-color: rgb(139, 0, 0);
+    }
+    100%{
+        transform: translate(0px,0px);
+        background-color: rgb(209, 52, 78);
+    }
+}
